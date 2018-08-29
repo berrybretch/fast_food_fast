@@ -2,25 +2,83 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<meta charset="UTF-8">
 		<title>Home</title>
 	</head>
-	<body>
+
+	<body class="index">	
+	
 		<div class="header">
 			<div class="logo">
-				<span>FAST FOOD FAST</span>
+				<h1><span>FAST FOOD FAST</span></h1>
 			</div>		
 			<div class="cont_user_cart">
-				<h4 id="contact"> CONTACT US</h4>
-				<div class="cart">
-					<div class="cart_amount">30</div>
-					<img src="images/cart.jpg" alt="cart image">
-				</div>				
+				<h4 class="contact"> CONTACT US</h4>
+				<a href="views/cart.html">
+					<div class="cart">
+						<div class="cart_amount">0</div>
+						<img src="images/cart.jpg" alt="cart image">
+					</div>				
+				</a>
 				<img src="images/placeholder.png" alt="">
 			</div>
-
-
-
 		</div>
+		
+
+		<div class="menu_title">
+			<h4 id="only_the_best">--Only the best--</h4>
+			<h3 id="from_our_menu">FROM OUR MENU</h3>
+		</div>
+
+		<!--Menu items begin here -->
+		
+		<ul class="menu">
+			<li>
+				<div class="menu_items">
+					<img src="images/baconcheese.jpg" alt="A bacon cheeseburger">
+					<p>test test text this burger is a delicious burger oh boy so good excitement pay money greed gluttony
+					<br>
+					<span class="price">300 KSH</span>
+					</p>
+				</div>
+				<div class="menu_buttons">
+					<button class="add">AddToCart</button>
+					<button class="remove">RemoveFromCart</button>
+				</div>
+			</li>
+			<li>
+				<div class="menu_items">
+					<img src="images/eggburger.jpg" alt=" An Egg burger">
+					<p>test test text this burger is a delicious burger oh boy so good excitement pay money greed gluttony
+					<br>
+					<span class="price">300 KSH</span>
+					</p>
+				</div>
+				<div class="menu_buttons">
+					<button class="add">AddToCart</button>
+					<button class="remove">RemoveFromCart</button>
+				</div>
+			</li>
+			<li>
+				<div class="menu_items">
+					<img src="images/betterburger.jpeg" alt="Beef Burger">
+					<p>test test text this burger is a delicious burger oh boy so good excitement pay money greed gluttony
+					<br>
+					<span class="price">300 KSH</span>
+					</p>
+				</div>
+				<div class="menu_buttons">
+					<button class="add">AddToCart</button>
+					<button class="remove">RemoveFromCart</button>
+				</div>
+			</li>
+
+		</ul>
+
+
+
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
