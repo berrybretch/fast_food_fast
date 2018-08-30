@@ -34,9 +34,9 @@
 	background-color:#ff9800;
 }
 
-.index{
+#index{
 	display: static;
-	background-color:#424242;
+	background-color:#white;
 	overflow: hidden;
 }
 
@@ -45,12 +45,15 @@
 	display: inline-flex;
 	width: 100%;
 	height: 100px;
-	box-shadow:4px 5px 20px 0px
+	border-radius: 3px;
+	box-shadow:4px 3px 20px 0px;
 }
 .logo{
 	text-align: center;
 	display: flex;
 	width: 50%;
+	background-color: #bdbdbd;
+
 }
 
 .logo h1{
@@ -68,6 +71,7 @@
 	display: flex;
 	justify-content: flex-end;
 	width: 50%;
+	background-color: white;
 }
 
 .cont_user_cart img{
@@ -94,7 +98,7 @@
 
 .menu_title{
 	font-family: 'Comfortaa' , cursive;
-	color: #e0e0e0;
+	color: black;
 	margin:auto;
 	text-align: center;
 	width:350px;	
@@ -168,8 +172,129 @@
 	color: #d32f2f; 
 	font-style: italic;
 }
-#test{
-	margin:auto;
-	width: 75%
-	height:600px;
+#cart{
+	background-color:white;
+}
+#cart li{
+	list-style: none;
+}
+#cart_titles{
+	vertical-align: middle;
+	display: inline-block;
+	width: 100%;
+	height: 20px;
+	border-radius: 10px;
+	padding-top:0px; 
+	padding-bottom:10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right:auto; 
+}
+#cart_titles ul{
+	overflow: hidden;
+	width: 100%;
+	
+}
+
+#cart_titles li{
+	float: left;
+}
+
+#product{
+	border-right-style: solid;
+	width: 50%;
+}
+
+#qty_label, #price_label{
+	margin:0;
+	padding-right:25px;
+	padding-left:25px;
+	width:90px;
+	height: 100%;
+	opacity: 0.8;
+	border-left-style: solid;
+}
+
+
+
+.cart_items{
+	background-color: #fbe9e7;
+	box-shadow: 2px 3px 15px 1px;
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	border-radius: 3px;
+}
+.description{
+	height: 100%;
+	display: inline-block;
+	float: left;
+	width: 54%;
+	border-right-style:inset;
+	padding-right: 12px;
+	border-width: 1px; 
+}
+.description ul{
+	width:75%;
+}
+.description li{
+	float: left;
+}
+
+.description img{
+	width: 75px;
+	height: 75px;
+	border-radius: 3px;
+}
+
+.description p{
+	overflow:hidden; 
+	width:400px;
+	height: 50px;
+	padding-left:12px;
+	margin:0px;
+}
+.description button{
+	border-style: none;
+	width:75px;
+	height:50px;
+	margin:0px;
+	padding: 0px;
+	background-color: #fbe9e7;
+	color: red;
+}
+.qty{
+	float: left;
+	width: 100px;
+	height:100%;
+	margin:0px;
+	padding-left:0px;
+}
+
+.qty h3{
+	height: 33.33333333333333%;
+	margin:0px;
+	padding: 0px;
+	color: orange;
+	text-align: center;
+}
+.qty button{
+	width: 100%;
+	height: 33.33333333%;
+	border-style: none;
+}
+
+.price{
+	float: left;
+	text-align: center;
+	width: 12%;
+	height: 100%;
+}
+
+.total_price{
+	float: left;
+	text-align: center;
+	width: 12%;
+	height: 100%;
 }
