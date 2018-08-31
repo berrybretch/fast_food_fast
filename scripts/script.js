@@ -33,6 +33,13 @@ $(document).ready(function(){
 		}
 	})
 
+	$('.accepted').click(function(){
+		$(this).parents('ul').css('background-color' , '#698f38')
+		})
+
+	$('.denied').click(function(){
+		$(this).parents('ul').css('background-color' , '#d32f2f')
+		})
 
 
 
