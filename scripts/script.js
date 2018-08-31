@@ -40,6 +40,21 @@ $(document).ready(function(){
 	$('.denied').click(function(){
 		$(this).parents('ul').css('background-color' , '#d32f2f')
 		})
+	$('.completed').click(function(){
+		$(this).parents('ul').css('background-color' , 'grey')
+		})
+	
+
+
+	$('#sign_in_button').click(function () {
+		x = $('#usrname').val()
+		if (x == 'admin') {
+			window.location = 'admin.html'
+		}else{
+			window.location = '../index.html'			}	
+	})
+
+
 
 
 
