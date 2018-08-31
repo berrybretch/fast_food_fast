@@ -22,6 +22,10 @@ $(document).ready(function(){
 		x = parseInt($(this).next('h3').text())
 		x = x+1
 		$(this).next('h3').text(x)
+		price = parseInt($(this).parent().siblings('.price').children('p').text())
+		$(this).parent().siblings('.total_price').children('p').text( x * price)
+		
+		
 	})
 
 	$('.subqty').click(function(){
@@ -29,8 +33,11 @@ $(document).ready(function(){
 		if (x == 0) {
 			$(this).prev('h3').text(x)
 		}else{
-			$(this).prev('h3').text(x-1)		
+			x = x - 1
+			$(this).prev('h3').text(x)		
 		}
+		price = parseInt($(this).parent().siblings('.price').children('p').text())
+		$(this).parent().siblings('.total_price').children('p').text( x * price)
 	})
 
 	$('.accepted').click(function(){
@@ -59,11 +66,6 @@ $(document).ready(function(){
 		$(this).closest('.single_item').remove()
 
 	})
-
-
-	
-
-
 
 	$('#admin_menu_submit').click(function(){
 		event.preventDefault();

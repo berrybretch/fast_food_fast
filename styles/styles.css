@@ -362,7 +362,7 @@
 	height: 50px;
 }
 .orders{
-	border-style-bottom: solid; 
+	
 	margin: 0 auto;
 }
 
@@ -416,7 +416,6 @@
 #create_menu_item{	
 	margin:auto;
 	width: 600px;
-	background-color: #90a4e;
 	border-radius: 3px;
 	box-shadow: 3px 3px 10px 4px;
 	text-align: center;
