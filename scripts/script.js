@@ -54,6 +54,62 @@ $(document).ready(function(){
 			window.location = '../index.html'			}	
 	})
 
+	$('.delete_menu_item').click(function(){
+		event.preventDefault();
+		$(this).closest('.single_item').remove()
+
+	})
+
+
+	
+
+
+
+	$('#admin_menu_submit').click(function(){
+		event.preventDefault();
+		text = $('#food_desc_input').val();
+		price = $('#food_price_input').val();
+		src = 'empty'
+		$('#food_image_input').change(function(){
+			src = grabimage(this.val());
+			
+		})
+
+		
+		food = '<div class="single_item">'+
+				'<img src=" '+src+' ">'+
+				'<div class="menu_item_desc">'+ 
+				'<p>'+	text +				
+				'</p>'+
+				'</div>'+
+				'<div class="menu_item_price">'+
+				'<h4>'+  price +
+				'</h4>'+
+				'</div>'+
+				'<button class="delete_menu_item">'+
+				'DELETE'+
+				'</button>'+
+				'</div>"'
+		$('#current_menu_items').append(food);
+
+		
+	})
+
+
+	function grabimage (event){
+		src = 'empty'
+		files = event.target.files[0]
+		var reader = new FileReader();
+		reader.onload = function(event){
+
+			src = event.target.result;
+		}
+		reader.readAsDataURL(files);
+		return src;
+	}
+
+
+
 
 
 
