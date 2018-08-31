@@ -35,8 +35,8 @@
 }
 
 #index{
-	display: static;
-	background-color:#white;
+	
+	background-color:white;
 	overflow: hidden;
 }
 
@@ -97,7 +97,7 @@
 
 
 .menu_title{
-	font-family: 'Comfortaa' , cursive;
+	font-family:  'Comfortaa' , cursive;
 	color: black;
 	margin:auto;
 	text-align: center;
@@ -298,3 +298,92 @@
 	width: 12%;
 	height: 100%;
 }
+
+.final_tally{
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 380px;
+	height:300px;
+	background-color:#f4511e ;
+	border-radius: 5px;
+	
+}
+#card{
+	position: relative;
+	bottom: -15px;
+	background-color:white;
+	width: 100%;
+	height: 264px;
+}
+
+.final_tally h2{
+	margin: auto;
+	margin-top: 12px;
+	text-align: center;
+	border-bottom: solid;
+	width:75%;
+	font-family: 'Comfortaa' , cursive;
+}
+.final_tally li{
+	font-size: 17px;
+	list-style: none;
+	width:50%;
+	height: 40px;
+	float: left;
+	text-align: center;
+}
+.final_tally ul{
+	border-style: solid;
+	border-color: #bdbdbd;
+}
+.final_tally button{
+	color: white;	
+	background-color: #e64a19;
+	width: 100%;
+	height: 30px;
+	border-style: none;
+	text-align: center;
+	}
+
+#titles{
+	display:inline-block;
+	margin:0 auto;
+}
+
+#titles h3{
+	line-height: 50px;
+	border-radius: 3px;
+	text-align: center;
+	background-color: grey;
+	color: white;
+	float: left;
+	width: 300px;
+	height: 50px;
+}
+.orders{
+	border-style-bottom: solid; 
+	margin: 0 auto;
+}
+
+.orders p{
+	border: ;
+	margin-right: 0;
+	background-color: white;
+	color: black;
+	float: left;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+ .orders ul{
+ 	margin-right: 0;
+	background-color: white;
+	color: black;
+	float: left;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+ }
