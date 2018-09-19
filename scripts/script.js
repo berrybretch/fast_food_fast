@@ -40,15 +40,15 @@ $(document).ready(function(){
 		$(this).parent().siblings('.total_price').children('p').text( x * price)
 	})
 
-	$('.accepted').click(function(){
-		$(this).parents('ul').css('background-color' , '#698f38')
+	$('.admin_accepted').click(function(){
+		$(this).parents('tr').css('background-color' , '#698f38')
 		})
 
-	$('.denied').click(function(){
-		$(this).parents('ul').css('background-color' , '#d32f2f')
+	$('.admin_denied').click(function(){
+		$(this).parents('tr').css('background-color' , '#d32f2f')
 		})
-	$('.completed').click(function(){
-		$(this).parents('ul').css('background-color' , 'grey')
+	$('.admin_completed').click(function(){
+		$(this).parents('tr').css('background-color' , 'grey')
 		})
 	
 

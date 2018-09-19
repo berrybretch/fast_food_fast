@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="../styles/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="UTF-8">
 	<title>admin</title>
 </head>
@@ -19,47 +20,122 @@
 				</div>				
 				<img src="../images/admin.jpeg" alt="">
 			</div>
-	</div>
-	
-	
-	<div id="titles">
-		<h3>ORDER NUMBER</h3>
-		<h3>USERNAME</h3>
-		<h3>EMAIL </h3>
-		<h3>ORDER TOTAL</h3>
-		<h3>STATUS</h3>
-	</div>
+	</div><br><br>
 
-	<div class="orders">
-		<p class="order_id">#204863</p>
-		<p class="username">mwachala</p>
-		<p class="email">paulmwachala@gmail.com</p>
-		<p class="total">60435</p>
-		<ul>
-			<li><button class="accepted">Accepted</button></li>
-			<li><button class="denied">Denied</button></li>
-			<li><button class="completed">Completed</button></li>
-			
-		</ul>
-	</div>
-
-	<div class="orders">
-		<p class="order_id">#335326</p>
-		<p class="username">johnathan</p>
-		<p class="email">paulmwachala@gmail.com</p>
-		<p class="total">54225</p>
-		<ul>
-			<li><button class="accepted">Accepted</button></li>
-			<li><button class="denied">Denied</button></li>
-			<li><button class="completed">Completed</button></li>
-		</ul>
-	</div>
+<form action="" id="admin_orders_form">
+	<table border="1">
+		<tr>
+			<th><div class="order_number_table">ORDER NUMBER</div></th>
+			<th><div class="user_table">USER</div></th>
+			<th><div class="status_table">STATUS</div></th>
+			<th><div class="total_table">TOTAL</div></th>
+		</tr>
 
 
+		<tr>
+			<td><div><span>#204863</span></div></td>
+			<td><div><span>Eric Mwachala</span></div></td>
+			<td>
+				<div>
+					<button type="button" class="admin_accepted">
+						<i class="material-icons">thumb_up</i>
+					</button>	
+					<button type="button" class="admin_denied">
+						<i class="material-icons">thumb_down</i>
+					</button>
+					<button type="button" class="admin_completed">
+						<i class="material-icons">done_outline</i>
+					</button>	
+
+				</div>
+			</td>
+			<td><div><span>65000000</span></div></td>
+		</tr>
+
+		<tr>
+			<td><div><span>#60</span></div></td>
+			<td><div><span>Mashaka Mwachala</span></div></td>
+			<td>
+				<div>
+					<button type="button" class="admin_accepted">
+						<i class="material-icons">thumb_up</i>
+					</button>	
+					<button type="button" class="admin_denied">
+						<i class="material-icons">thumb_down</i>
+					</button>
+					<button type="button" class="admin_completed">
+						<i class="material-icons">done_outline</i>
+					</button>	
+
+				</div>
+			</td>
+			<td><div><span>12000000</span></div></td>
+		</tr>
+		<tr>
+			<td><div><span>#55605</span></div></td>
+			<td><div><span>Donald Trump</span></div></td>
+			<td>
+				<div>
+					<button type="button" class="admin_accepted">
+						<i class="material-icons">thumb_up</i>
+					</button>	
+					<button type="button" class="admin_denied">
+						<i class="material-icons">thumb_down</i>
+					</button>
+					<button type="button" class="admin_completed">
+						<i class="material-icons">done_outline</i>
+					</button>	
+
+				</div>
+			</td>
+			<td><div><span>smallLoanof1million</span></div></td>
+		</tr>
+		<tr>
+			<td><div><span>#500</span></div></td>
+			<td><div><span>Jirong'o</span></div></td>
+			<td>
+				<div>
+					<button type="button" class="admin_accepted">
+						<i class="material-icons">thumb_up</i>
+					</button>	
+					<button type="button" class="admin_denied">
+						<i class="material-icons">thumb_down</i>
+					</button>
+					<button type="button" class="admin_completed">
+						<i class="material-icons">done_outline</i>
+					</button>	
+
+				</div>
+			</td>
+			<td><div><span>500</span></div></td>
+		</tr>
+		<tr>
+			<td><div><span>#69</span></div></td>
+			<td><div><span>Daniel Hernandez</span></div></td>
+			<td>
+				<div>
+					<button type="button" class="admin_accepted">
+						<i class="material-icons">thumb_up</i>
+					</button>	
+					<button type="button" class="admin_denied">
+						<i class="material-icons">thumb_down</i>
+					</button>
+					<button type="button" class="admin_completed">
+						<i class="material-icons">done_outline</i>
+					</button>	
+
+				</div>
+			</td>
+			<td><div><span>6969</span></div></td>
+		</tr>
 
 
 
+	</table>
 
+
+
+</form>
 
 
 
