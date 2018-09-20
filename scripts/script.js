@@ -18,27 +18,43 @@ $(document).ready(function(){
 	$('img').on('dragstart', function(event){
 		event.preventDefault();
 	})
+
 	$('.addqty').click(function(){
 		x = parseInt($(this).next('h3').text())
 		x = x+1
 		$(this).next('h3').text(x)
 		price = parseInt($(this).parent().siblings('.price').children('p').text())
-		$(this).parent().siblings('.total_price').children('p').text( x * price)
-		
+		$(this).parent().siblings('.total_price').children('p').text( x * price)		
 		
 	})
 
-	$('.subqty').click(function(){
-		x = parseInt($(this).prev('h3').text())
+
+	$('.cart_add_qty').click(function(){
+		event.preventDefault()
+		x = parseInt($(this).next('p').text())
+		x = x+1
+		$(this).next('p').text(x)
+	})
+
+
+	$('.cart_remove_qty').click(function(){
+		event.preventDefault()
+		x = parseInt($(this).prev('p').text())
 		if (x == 0) {
 			$(this).prev('h3').text(x)
 		}else{
 			x = x - 1
-			$(this).prev('h3').text(x)		
+			$(this).prev('p').text(x)		
 		}
 		price = parseInt($(this).parent().siblings('.price').children('p').text())
 		$(this).parent().siblings('.total_price').children('p').text( x * price)
 	})
+	$('.cart_remove_order').click(function(){
+		event.preventDefault()
+		$(this).parents('tr').remove()
+
+	})
+
 
 	$('.admin_accepted').click(function(){
 		$(this).parents('tr').css('background-color' , '#698f38')

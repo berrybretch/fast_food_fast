@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="../styles/styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<meta charset="UTF-8">
 		<title>Cart</title>
@@ -18,76 +19,145 @@
 				<div class="cart">
 					<div class="cart_amount">0</div>
 						<img src="../images/cart.jpg" alt="cart image">
-				</div>				
-				<img src="../images/placeholder.png" alt="">
+				</div>	
+				<a href="sign_in.html">
+					<img src="../images/placeholder.png" alt="">
+
+				</a>			
 			</div>
-		</div>
+		</div><br><br>
+		<div id="cart_title">Your Cart</div>
 
-		<div id="cart_titles">	
-			<ul >	
-				<li id="product">PRODUCT</li>
-				<li id="qty_label">QUANTITY</li>
-				<li id="price_label">PRICE</li>
-				<li id="ToTal"></li>
-			</ul>
-		</div>
-		<div class="cart_items">
-			<div class="description">
-				<ul>
-					<li><img src="../images/eggburger.jpg" alt="eggburger"></li>
-					<li><p>torem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></li>
-					<li><button>REMOVE</button></li>
-				</ul>
-			</div>
-			<div class="qty">
-				<button class="addqty">+</button>
-				<h3>0</h3>
-				<button class="subqty">-</button>
-			</div>
-			<div class="price"><p>12</p></div>
-			<div class="total_price"><p>19</p></div>			
-		</div>
+	<form id="cart_form">
+		<table border="1" id="user_cart">
 
-		<div class="cart_items">
-			<div class="description">
-				<ul>
-					<li><img src="../images/eggburger.jpg" alt="eggburger"></li>
-					<li><p>torem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></li>
-					<li><button>REMOVE</button></li>
-				</ul>
-			</div>
+			<tr>
+				<th>PRODUCT</th>
+				<th>Quantity</th>
+				<th>UNIT_PRICE</th>
+				<th>PRICE</th>
+			</tr>
 
-
-			<div class="qty">
-				<button class="addqty">+</button>
-				<h3>0</h3>
-				<button class="subqty">-</button>
-			</div>
-
-			<div class="price"><p>300</p></div>
-			<div class="total_price"><p>12</p></div>
-		</div>
-
-		<div class="final_tally">
-			<h2>ORDER SUMMARY</h2>			
-			<div id="card">
-				<ul>
-					<li>SUB-TOTAL</li>
-					<li>0</li>
-					<li>SHIPPING</li>
-					<li>0</li>
-				</ul>
-				<button type="button"><strong>CHECKOUT</strong></button>
-
-
-			</div>
 			
+			<tr class="cart_contents">
+				<td>
+					<div>
+						<img src="../images/baconcheese.jpg" alt="">						
+					</div>
+					<div class="cart_order_description">
+						<p>this is another test phrase meant to tests please relax nothing to see here its all good</p>
+					</div>
+					<div>
+						<button class="cart_remove_order"><i class="material-icons">delete</i> REMOVE</button>
+					</div>
+
+				</td>
+				<td>
+					<button class="cart_add_qty"><i class="material-icons">add_box</i></button>
+					<p>10</p>
+					<button class="cart_remove_qty"><i class="material-icons">remove_circle</i></button>
+				</td>
+				<td class="cart_unit_price"><p>12</p></td>
+				<td class="cart_total_price"><p></p></td>
+			</tr>
+			<tr class="cart_contents">
+				<td>
+					<div>
+						<img src="../images/baconcheese.jpg" alt="">						
+					</div>
+					<div class="cart_order_description">
+						<p>this is another test phrase meant to tests please relax nothing to see here its all good</p>
+					</div>
+					<div>
+						<button class="cart_remove_order"><i class="material-icons">delete</i> REMOVE</button>
+					</div>
+
+				</td>
+				<td>
+					<button class="cart_add_qty"><i class="material-icons">add_box</i></button>
+					<p>10</p>
+					<button class="cart_remove_qty"><i class="material-icons">remove_circle</i></button>
+				</td>
+				<td class="cart_unit_price"><p>12</p></td>
+				<td class="cart_total_price"><p></p></td>
+			</tr>
+			<tr class="cart_contents">
+				<td>
+					<div>
+						<img src="../images/baconcheese.jpg" alt="">						
+					</div>
+					<div class="cart_order_description">
+						<p>this is another test phrase meant to tests please relax nothing to see here its all good</p>
+					</div>
+					<div>
+						<button class="cart_remove_order"><i class="material-icons">delete</i> REMOVE</button>
+					</div>
+
+				</td>
+				<td>
+					<button class="cart_add_qty"><i class="material-icons">add_box</i></button>
+					<p>10</p>
+					<button class="cart_remove_qty"><i class="material-icons">remove_circle</i></button>
+				</td>
+				<td class="cart_unit_price"><p>12</p></td>
+				<td class="cart_total_price"><p></p></td>
+			</tr>
+			<tr class="cart_contents">
+				<td>
+					<div>
+						<img src="../images/baconcheese.jpg" alt="">						
+					</div>
+					<div class="cart_order_description">
+						<p>this is another test phrase meant to tests please relax nothing to see here its all good</p>
+					</div>
+					<div>
+						<button class="cart_remove_order"><i class="material-icons">delete</i> REMOVE</button>
+					</div>
+
+				</td>
+				<td>
+					<button class="cart_add_qty"><i class="material-icons">add_box</i></button>
+					<p>10</p>
+					<button class="cart_remove_qty"><i class="material-icons">remove_circle</i></button>
+				</td>
+				<td class="cart_unit_price"><p>12</p></td>
+				<td class="cart_total_price"><p></p></td>
+			</tr>
 			
 
+
+
+		</table>
+		<br><br>
+		
+		<div id="receipt">
+			<div><h3>OrderSummary</h3></div>
+			<div id="cart_subtotal"><span>Sub-Total:</span><span>KSH 0000</span></div>
+			<div id="cart_shipping"><span>ShippingFee:</span><span>KSH 200</span></div>
+			<div id="cart_vat"><span>VAT</span><span>0</span></div>
+			<div id="cart_total"><span>TOTAL</span><span>0</span></div>			
 		</div>
 
+		</table>
 
 
+
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
